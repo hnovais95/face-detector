@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		77F0F070F47EF42C65A48060 /* Pods_FaceDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A5C9EC617D38922E624DDE5 /* Pods_FaceDetector.framework */; };
-		CAB7918028DF4E8800C994AB /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB7917F28DF4E8800C994AB /* Double+Extensions.swift */; };
+		CAB7918028DF4E8800C994AB /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB7917F28DF4E8800C994AB /* CGFloat+Extensions.swift */; };
 		CAB7918228DF515400C994AB /* FaceStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB7918128DF515400C994AB /* FaceStatus.swift */; };
 		CAF49D2D28C799840088B9F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF49D2C28C799840088B9F1 /* AppDelegate.swift */; };
 		CAF49D2F28C799840088B9F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF49D2E28C799840088B9F1 /* SceneDelegate.swift */; };
@@ -16,7 +16,7 @@
 		CAF49D3428C799840088B9F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAF49D3228C799840088B9F1 /* Main.storyboard */; };
 		CAF49D3628C799850088B9F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAF49D3528C799850088B9F1 /* Assets.xcassets */; };
 		CAF49D3928C799850088B9F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAF49D3728C799850088B9F1 /* LaunchScreen.storyboard */; };
-		CAF49D4128C799DF0088B9F1 /* SelfieQueueLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF49D4028C799DF0088B9F1 /* SelfieQueueLabel.swift */; };
+		CAF49D4128C799DF0088B9F1 /* SelfieQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF49D4028C799DF0088B9F1 /* SelfieQueue.swift */; };
 		CAF49D4328C799EE0088B9F1 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF49D4228C799EE0088B9F1 /* UIHelper.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +24,7 @@
 		3F12F4019ADFDEE3592DB25A /* Pods-FaceDetector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceDetector.release.xcconfig"; path = "Target Support Files/Pods-FaceDetector/Pods-FaceDetector.release.xcconfig"; sourceTree = "<group>"; };
 		6A5C9EC617D38922E624DDE5 /* Pods_FaceDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C0A7DEFE81E1606F6FE6056 /* Pods-FaceDetector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceDetector.debug.xcconfig"; path = "Target Support Files/Pods-FaceDetector/Pods-FaceDetector.debug.xcconfig"; sourceTree = "<group>"; };
-		CAB7917F28DF4E8800C994AB /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		CAB7917F28DF4E8800C994AB /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
 		CAB7918128DF515400C994AB /* FaceStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceStatus.swift; sourceTree = "<group>"; };
 		CAF49D2928C799840088B9F1 /* FaceDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF49D2C28C799840088B9F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,7 +34,7 @@
 		CAF49D3528C799850088B9F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAF49D3828C799850088B9F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAF49D3A28C799850088B9F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CAF49D4028C799DF0088B9F1 /* SelfieQueueLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieQueueLabel.swift; sourceTree = "<group>"; };
+		CAF49D4028C799DF0088B9F1 /* SelfieQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieQueue.swift; sourceTree = "<group>"; };
 		CAF49D4228C799EE0088B9F1 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,9 +62,9 @@
 		CAB7917E28DF4DFE00C994AB /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				CAF49D4028C799DF0088B9F1 /* SelfieQueueLabel.swift */,
+				CAF49D4028C799DF0088B9F1 /* SelfieQueue.swift */,
 				CAF49D4228C799EE0088B9F1 /* UIHelper.swift */,
-				CAB7917F28DF4E8800C994AB /* Double+Extensions.swift */,
+				CAB7917F28DF4E8800C994AB /* CGFloat+Extensions.swift */,
 				CAB7918128DF515400C994AB /* FaceStatus.swift */,
 			);
 			path = Utilities;
@@ -244,10 +244,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAB7918028DF4E8800C994AB /* Double+Extensions.swift in Sources */,
+				CAB7918028DF4E8800C994AB /* CGFloat+Extensions.swift in Sources */,
 				CAF49D3128C799840088B9F1 /* ViewController.swift in Sources */,
 				CAF49D2D28C799840088B9F1 /* AppDelegate.swift in Sources */,
-				CAF49D4128C799DF0088B9F1 /* SelfieQueueLabel.swift in Sources */,
+				CAF49D4128C799DF0088B9F1 /* SelfieQueue.swift in Sources */,
 				CAB7918228DF515400C994AB /* FaceStatus.swift in Sources */,
 				CAF49D4328C799EE0088B9F1 /* UIHelper.swift in Sources */,
 				CAF49D2F28C799840088B9F1 /* SceneDelegate.swift in Sources */,

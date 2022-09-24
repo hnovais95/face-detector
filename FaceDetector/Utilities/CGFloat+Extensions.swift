@@ -1,5 +1,5 @@
 //
-//  Double+Extensions.swift
+//  CGFloat+Extensions.swift
 //  FaceDetector
 //
 //  Created by Heitor Novais on 24/09/22.
